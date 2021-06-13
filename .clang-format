@@ -1,0 +1,46 @@
+# These settings are mirrored in .editorconfig.  Keep them in sync.
+UseTab: Never
+TabWidth: 2
+IndentWidth: 2
+ContinuationIndentWidth: 2
+ColumnLimit: 120
+
+IndentCaseLabels: true
+BreakBeforeBraces: Attach
+
+# Don't insert spaces inside empty '()'
+SpaceInEmptyParentheses: false
+
+# The number of spaces before trailing line comments (// - comments).
+# This does not affect trailing block comments (/* - comments).
+SpacesBeforeTrailingComments: 1
+
+# Don't insert spaces in casts
+# x = (int32) y;    not    x = ( int32 ) y;
+SpacesInCStyleCastParentheses: false
+
+# Insert spaces after cast
+# (void *) a;   not   (void *)a;
+SpaceAfterCStyleCast: true
+
+# Don't insert spaces inside cast
+# (void *) a;   not   ( void * ) a;
+SpacesInCStyleCastParentheses: false
+
+# Don't insert spaces inside container literals
+# var arr = [1, 2, 3];    not    var arr = [ 1, 2, 3 ];
+SpacesInContainerLiterals: false
+
+# Don't insert spaces after '(' or before ')'
+# f(arg);    not    f( arg );
+SpacesInParentheses: false
+
+# Don't insert spaces after '[' or before ']'
+# int a[5];    not    int a[ 5 ];
+SpacesInSquareBrackets: false
+
+PointerAlignment: Right
+
+AlignAfterOpenBracket: AlwaysBreak
+BinPackParameters: false
+ExperimentalAutoDetectBinPacking: true
